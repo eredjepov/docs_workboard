@@ -43,6 +43,15 @@ export const App = () => (
         show={VisitShow}
         options={{ label: "Visits" }}
       />
+      {/* <Resource
+        name="diagnoses"
+        list={DiagnosisList}
+        create={DiagnosisCreate}
+        edit={DiagnosisEdit}
+        show={DiagnosisShow}
+        options={{ label: "Diagnoses" }}
+        // Пока не создаем страницы для диагнозов, но ресурс нужен, чтобы React Admin понимал связи между таблицами.
+      /> */}
       {/* Auth-страницы оставь в App: без логина Supabase RLS не даст создавать записи. */}
       <CustomRoutes noLayout>
         <Route path={SetPasswordPage.path} element={<SetPasswordPage />} />
